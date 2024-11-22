@@ -14,29 +14,29 @@ export interface RefsProps {
 }
 
 function MainCard({ refs }: { refs: RefsProps }) {
-  return (
-    <div className="bg-white shadow rounded-lg p-6 lg:fixed lg:max-h-screen lg:top-8">
-      <div className="flex flex-col items-center">
-        <div className="w-40 h-40 mb-4 relative">
-          <Image
-            src={profileImage}
-            alt="Profile Image"
-            fill
-            className="rounded-lg object-cover bg-gray-300 shrink-0 shadow-md"
-          />
+    return (
+      <div className="bg-white shadow rounded-lg p-6 lg:fixed lg:max-h-screen lg:top-8 lg:pt-8 lg:pb-8">
+        <div className="flex flex-col items-center">
+          <div className="w-40 h-60 sm:h-40 mb-4 relative">
+            <Image
+              src={profileImage}
+              alt="Profile Image"
+              fill
+              className="rounded-lg object-cover bg-gray-300 shrink-0 shadow-md"
+            />
+          </div>
+  
+          <h1 className="text-xl font-bold text-center">Flávio da Costa Paixão</h1>
+          <p className="text-gray-700 text-center">Software Engineer</p>
         </div>
-
-        <h1 className="text-xl font-bold text-center">Flávio da Costa Paixão</h1>
-        <p className="text-gray-700 text-center">Software Engineer</p>
+  
+        <SectionDivider />
+        <ContactSection />
+  
+        <SectionDivider />
+        <SelectInfoSection refs={refs} />
       </div>
-
-      <SectionDivider />
-      <ContactSection />
-
-      <SectionDivider />
-      <SelectInfoSection refs={refs} />
-    </div>
-  );
-}
-
+    );
+  }
+  
 export default MainCard;

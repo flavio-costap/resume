@@ -25,12 +25,9 @@ export default function HomeSection() {
     <div className="bg-gray-100 min-h-screen">
       <div className="container mx-auto py-8 px-4 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          {/* MainCard */}
           <div className="lg:col-span-3">
             <MainCard refs={refs} />
           </div>
-
-          {/* Seções */}
           <div className="lg:col-span-9 flex flex-col gap-8">
             <div
               ref={aboutRef}

@@ -19,8 +19,8 @@ function ExperienceSection() {
           </div>
           <ul className="list-none mt-2 space-y-2">
             {exp.descriptions.map((desc, descIndex) => (
-              <li key={descIndex} className="text-gray-700 flex items-center m-1">
-                <span className="h-1.5 w-1.5 bg-blue-500 rounded-full mr-2 mt-1 shrink-0"></span>
+              <li key={descIndex} className="text-gray-700 flex">
+                <span className="h-1.5 w-1.5 bg-blue-500 rounded-full mr-2 mt-2.5 shrink-0"></span>
                 <span>{desc}</span>
               </li>
             ))}
