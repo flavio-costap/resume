@@ -15,12 +15,10 @@ const geistMono = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <div className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <main>
         <Component {...pageProps} />
-      </body>
-    </html>
+      </main>
+    </div>
   );
 }
