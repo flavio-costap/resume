@@ -27,7 +27,7 @@ function MainCard({ refs }: { refs: RefsProps }) {
           </div>
   
           <h1 className="text-xl font-bold text-center">Flávio da Costa Paixão</h1>
-          <p className="text-gray-700 text-center">Software Engineer</p>
+          <p className="text-gray-700 text-center">Engenheiro de Software</p>
         </div>
   
         <SectionDivider />

@@ -1,6 +1,7 @@
 import { certifications } from "@/utils/certifications";
 import { TrophyIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
+import Link from "next/link";
 
 function CertificationsSection() {
   return (
@@ -11,9 +12,11 @@ function CertificationsSection() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {certifications.map((certification, index) => (
-          <div
+          <Link
+            href={certification.link}
+            target="_blank"
             key={index}
-            className="bg-white shadow-md rounded-lg p-6 flex flex-col space-y-4 transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+            className="bg-white shadow-md rounded-lg p-6 flex flex-col space-y-4 transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg cursor-pointer"
           >
             <div className="flex flex-row justify-between space-x-4">
               <div>
@@ -24,21 +27,16 @@ function CertificationsSection() {
                   {certification.organization}
                 </p>
               </div>
-              <Image src={certification.logo} alt={`${certification.organization}-logo`} className="h-12 w-12"/>
+              <Image
+                src={certification.logo}
+                alt={`${certification.organization}-logo`}
+                className="h-12 w-12"
+              />
             </div>
             <div>
               <p className="text-sm text-gray-600">
                 <span className="font-medium">Período:</span>{" "}
                 {certification.period}
-              </p>
-              <p className="text-sm text-blue-500 underline">
-                <a
-                  href={`https://www.udemy.com/certificate/${certification.credential}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ver Credencial
-                </a>
               </p>
             </div>
             {certification.skills && certification.skills.length > 0 && (
@@ -53,7 +51,7 @@ function CertificationsSection() {
                 ))}
               </div>
             )}
-          </div>
+          </Link>
         ))}
       </div>
     </>

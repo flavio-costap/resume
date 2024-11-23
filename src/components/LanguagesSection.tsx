@@ -10,7 +10,7 @@ function LanguagesSection() {
       <div className="space-y-6">
         <div className="flex flex-row space-x-2">
           <b>Inglês - </b>
-          <p>Intermediário</p>
+          <p>B2 - Intermediário Avançado</p>
         </div>
         <div className="w-full bg-gray-200 rounded-full dark:bg-gray-200">
           <div
@@ -21,7 +21,7 @@ function LanguagesSection() {
 
         <div className="flex flex-row space-x-2">
           <b>Espanhol - </b>
-          <p>Intermediário</p>
+          <p>B1 - Intermediário</p>
         </div>
         <div className="w-full bg-gray-200 rounded-full dark:bg-gray-200">
           <div
@@ -32,7 +32,7 @@ function LanguagesSection() {
 
         <div className="flex flex-row space-x-2">
           <b>Japonês - </b>
-          <p>Básico</p>
+          <p>A2 - Básico</p>
         </div>
         <div className="w-full bg-gray-200 rounded-full dark:bg-gray-200">
           <div
