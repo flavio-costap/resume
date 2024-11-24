@@ -21,6 +21,7 @@ function SelectInfoSection({ refs }: { refs: RefsProps }) {
       <button
         type="button"
         className="text-white bg-blue-500 hover:bg-blue-300 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center me-2 mb-2"
+        aria-label="about"
         onClick={() => handleButtonClick(refs.aboutRef)}
       >
         <IdentificationIcon className="w-6 h-6 text-white" />
@@ -28,6 +29,7 @@ function SelectInfoSection({ refs }: { refs: RefsProps }) {
       <button
         type="button"
         className="text-white bg-blue-500 hover:bg-blue-300 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center me-2 mb-2"
+        aria-label="experience"
         onClick={() => handleButtonClick(refs.experienceRef)}
       >
         <BriefcaseIcon className="w-6 h-6 text-white" />
@@ -35,6 +37,7 @@ function SelectInfoSection({ refs }: { refs: RefsProps }) {
       <button
         type="button"
         className="text-white bg-blue-500 hover:bg-blue-300 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center me-2 mb-2"
+        aria-label="academic"
         onClick={() => handleButtonClick(refs.academicRef)}
       >
         <AcademicCapIcon className="w-6 h-6 text-white" />
@@ -42,6 +45,7 @@ function SelectInfoSection({ refs }: { refs: RefsProps }) {
       <button
         type="button"
         className="text-white bg-blue-500 hover:bg-blue-300 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center me-2 mb-2"
+        aria-label="certifications"
         onClick={() => handleButtonClick(refs.certificationsRef)}
       >
         <TrophyIcon className="w-6 h-6 text-white" />
@@ -49,6 +53,7 @@ function SelectInfoSection({ refs }: { refs: RefsProps }) {
       <button
         type="button"
         className="text-white bg-blue-500 hover:bg-blue-300 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center me-2 mb-2"
+        aria-label="languages"
         onClick={() => handleButtonClick(refs.languagesRef)}
       >
         <LanguageIcon className="w-6 h-6 text-white" />
