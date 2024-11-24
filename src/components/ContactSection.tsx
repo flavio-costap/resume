@@ -12,14 +12,25 @@ function ContactSection() {
       <ul className="space-y-2">
         <li className="flex flex-row space-x-2 items-center">
           <PhoneIcon className="w-5 h-5 text-blue-500" />
-          <p>+55 61 9 9226 6856</p>
+          <a
+            href="https://w.app/ejAr8P"
+            aria-label="Contact via whatsap flavio-costap +55 61 9 9226 6856"
+            className="text-blue-500"
+            target="_blank"
+          >
+            +55 61 9 9226 6856
+          </a>
         </li>
         <li className="flex flex-row space-x-2 items-center">
           <EnvelopeIcon className="w-5 h-5 text-blue-500" />
           <p>flaviocosta12@gmail.com</p>
         </li>
         <li className="flex flex-row space-x-2 items-center">
-          <Image className="w-5 h-5 text-blue-500"  src={LinkedinIcon} alt='linkedin-icon'/>
+          <Image
+            className="w-5 h-5 text-blue-500"
+            src={LinkedinIcon}
+            alt="linkedin-icon"
+          />
           <a
             href="https://www.linkedin.com/in/flavio-costap/"
             aria-label="LinkedIn profile for flavio-costap"
@@ -30,7 +41,11 @@ function ContactSection() {
           </a>
         </li>
         <li className="flex flex-row space-x-2 items-center">
-        <Image className="w-5 h-5 text-blue-500"  src={GithubIcon} alt='github-icon'/>
+          <Image
+            className="w-5 h-5 text-blue-500"
+            src={GithubIcon}
+            alt="github-icon"
+          />
           <a
             href="https://github.com/flaviocostap"
             className="text-blue-500"
