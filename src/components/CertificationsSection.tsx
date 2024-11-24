@@ -16,7 +16,8 @@ function CertificationsSection() {
             href={certification.link}
             target="_blank"
             key={index}
-            className="bg-white shadow-md rounded-lg p-6 flex flex-col space-y-4 transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg cursor-pointer"
+            aria-label={`Ver certificado: ${certification.title} por ${certification.organization}`}
+            className="bg-white shadow-lg rounded-lg p-6 flex flex-col space-y-4 transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
           >
             <div className="flex flex-row justify-between space-x-4">
               <div>

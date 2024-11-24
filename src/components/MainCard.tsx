@@ -15,7 +15,7 @@ export interface RefsProps {
 
 function MainCard({ refs }: { refs: RefsProps }) {
     return (
-      <div className="bg-white shadow rounded-lg p-6 lg:fixed lg:max-h-screen lg:top-8 lg:pt-8 lg:pb-8">
+      <div className="bg-white shadow rounded-lg p-6 lg:fixed lg:max-h-screen lg:top-8 lg:pt-8 lg:pb-8 animate-fadeInQuick">
         <div className="flex flex-col items-center">
           <div className="w-40 h-60 sm:h-40 mb-4 relative">
             <Image

@@ -26,41 +26,42 @@ export default function HomeSection() {
       <div className="container mx-auto py-8 px-4 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           <div className="lg:col-span-3">
+            {/* No animation for MainCard */}
             <MainCard refs={refs} />
           </div>
           <div className="lg:col-span-9 flex flex-col gap-8">
             <div
               ref={aboutRef}
               id="about"
-              className="bg-white shadow rounded-lg p-6"
+              className="bg-white shadow rounded-lg p-6 animate-fadeInMedium"
             >
               <AboutSection />
             </div>
             <div
               ref={experienceRef}
               id="experience"
-              className="bg-white shadow rounded-lg p-6"
+              className="bg-white shadow rounded-lg p-6 animate-fadeInSlow"
             >
               <ExperienceSection />
             </div>
             <div
               ref={academicRef}
               id="academic"
-              className="bg-white shadow rounded-lg p-6"
+              className="bg-white shadow rounded-lg p-6 animate-fadeInSlow"
             >
               <AcademicSection />
             </div>
             <div
               ref={certificationsRef}
               id="certifications"
-              className="bg-white shadow rounded-lg p-6"
+              className="bg-white shadow rounded-lg p-6 animate-fadeInSlow"
             >
               <CertificationsSection />
             </div>
             <div
               ref={languagesRef}
               id="languages"
-              className="bg-white shadow rounded-lg p-6"
+              className="bg-white shadow rounded-lg p-6 animate-fadeInSlow"
             >
               <LanguagesSection />
             </div>
