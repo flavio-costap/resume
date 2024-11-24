@@ -22,9 +22,9 @@ function ContactSection() {
           <Image className="w-5 h-5 text-blue-500"  src={LinkedinIcon} alt='linkedin-icon'/>
           <a
             href="https://www.linkedin.com/in/flavio-costap/"
-            aria-label="LinkedIn profile for Flávio Costa"
+            aria-label="LinkedIn profile for flavio-costap"
             className="text-blue-500"
-            target="_black"
+            target="_blank"
           >
             flavio-costap
           </a>
@@ -34,8 +34,8 @@ function ContactSection() {
           <a
             href="https://github.com/flaviocostap"
             className="text-blue-500"
-            aria-label="GitHub profile for Flávio Costa"
-            target="_black"
+            aria-label="GitHub profile for flavio-costap"
+            target="_blank"
           >
             flavio-costap
           </a>
