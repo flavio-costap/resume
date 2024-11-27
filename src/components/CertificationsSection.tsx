@@ -1,9 +1,18 @@
-import { certifications } from "@/utils/certifications";
+import { useLanguage } from "@/context/LanguageContext";
+import { certificationsType } from "@/types/certificationTypes";
+import { certificationsBr, certificationsEn } from "@/utils/certifications";
 import { TrophyIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 function CertificationsSection() {
+  const { language } = useLanguage();
+  const [dataLanguage, setDataLanguage] = useState<certificationsType>([])
+  useEffect(() => {
+
+    setDataLanguage(language === 'br' ? certificationsBr : certificationsEn)
+  }, [language]);
   return (
     <>
       <div className="flex flex-row space-x-3 items-center mb-8">
@@ -11,7 +20,7 @@ function CertificationsSection() {
         <h2 className="text-xl font-bold">Certificados</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {certifications.map((certification, index) => (
+        {dataLanguage.map((certification, index) => (
           <Link
             href={certification.link}
             target="_blank"

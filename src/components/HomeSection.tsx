@@ -5,6 +5,8 @@ import ExperienceSection from "@/components/ExperienceSection";
 import LanguagesSection from "@/components/LanguagesSection";
 import MainCard from "@/components/MainCard";
 import AcademicSection from "@/components/AcademicSection";
+import TranslatorButton from "./TranslatorButton";
+import VisitorCard from "./VisitorCard";
 
 export default function HomeSection() {
   const aboutRef = useRef(null);
@@ -22,14 +24,13 @@ export default function HomeSection() {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-gray-100 min-h-screen relative">
       <div className="container mx-auto py-8 px-4 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           <div className="lg:col-span-3">
-            {/* No animation for MainCard */}
             <MainCard refs={refs} />
           </div>
-          <div className="lg:col-span-9 flex flex-col gap-8">
+          <div className="lg:col-span-8 flex flex-col gap-8">
             <div
               ref={aboutRef}
               id="about"
@@ -65,6 +66,10 @@ export default function HomeSection() {
             >
               <LanguagesSection />
             </div>
+          </div>
+          <div className="lg:col-span-1 hidden lg:block">
+            <TranslatorButton />
+            <VisitorCard/>
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ function SelectInfoSection({ refs }: { refs: RefsProps }) {
     <div className="flex flex-row justify-around">
       <button
         type="button"
-        className="text-white bg-blue-500 hover:bg-blue-300 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center me-2 mb-2"
+        className="text-white bg-blue-500 focus:outline-none focus:ring-4 font-medium rounded-full text-sm p-2.5 text-center me-2 mb-2 transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
         aria-label="about"
         onClick={() => handleButtonClick(refs.aboutRef)}
       >
@@ -28,7 +28,7 @@ function SelectInfoSection({ refs }: { refs: RefsProps }) {
       </button>
       <button
         type="button"
-        className="text-white bg-blue-500 hover:bg-blue-300 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center me-2 mb-2"
+        className="text-white bg-blue-500 focus:outline-none focus:ring-4 font-medium rounded-full text-sm p-2.5 text-center me-2 mb-2 transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
         aria-label="experience"
         onClick={() => handleButtonClick(refs.experienceRef)}
       >
@@ -36,7 +36,7 @@ function SelectInfoSection({ refs }: { refs: RefsProps }) {
       </button>
       <button
         type="button"
-        className="text-white bg-blue-500 hover:bg-blue-300 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center me-2 mb-2"
+        className="text-white bg-blue-500 focus:outline-none focus:ring-4 font-medium rounded-full text-sm p-2.5 text-center me-2 mb-2 transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
         aria-label="academic"
         onClick={() => handleButtonClick(refs.academicRef)}
       >
@@ -44,7 +44,7 @@ function SelectInfoSection({ refs }: { refs: RefsProps }) {
       </button>
       <button
         type="button"
-        className="text-white bg-blue-500 hover:bg-blue-300 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center me-2 mb-2"
+        className="text-white bg-blue-500 focus:outline-none focus:ring-4 font-medium rounded-full text-sm p-2.5 text-center me-2 mb-2 transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
         aria-label="certifications"
         onClick={() => handleButtonClick(refs.certificationsRef)}
       >
@@ -52,7 +52,7 @@ function SelectInfoSection({ refs }: { refs: RefsProps }) {
       </button>
       <button
         type="button"
-        className="text-white bg-blue-500 hover:bg-blue-300 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center me-2 mb-2"
+        className="text-white bg-blue-500 focus:outline-none focus:ring-4 font-medium rounded-full text-sm p-2.5 text-center me-2 mb-2 transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
         aria-label="languages"
         onClick={() => handleButtonClick(refs.languagesRef)}
       >

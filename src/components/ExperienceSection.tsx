@@ -1,14 +1,26 @@
-import { experiences } from "@/utils/exeriences";
+import { useLanguage } from "@/context/LanguageContext";
+import { experiencesType } from "@/types/ExperienceTypes";
+import { experiencesBr, experiencesEn } from "@/utils/exeriences";
 import { BriefcaseIcon } from "@heroicons/react/24/solid";
+import { useEffect, useState } from "react";
 
 function ExperienceSection() {
+  const { language } = useLanguage();
+  const [dataLanguage, setDataLanguage] = useState<experiencesType>([]);
+  useEffect(() => {
+    setDataLanguage(language === "br" ? experiencesBr : experiencesEn);
+  }, [language]);
   return (
     <>
       <div className="flex flex-row space-x-3 items-center mb-8">
         <BriefcaseIcon className="h-6 w-6 text-blue-500" />
-        <h2 className="text-xl font-bold">Experiência Profissional</h2>
+        <h2 className="text-xl font-bold">
+          {language === "br"
+            ? "Experiência Profissional"
+            : "Professional Experience"}
+        </h2>
       </div>
-      {experiences.map((exp, index) => (
+      {dataLanguage.map((exp, index) => (
         <div key={index} className="mb-10">
           <div className="flex justify-between flex-wrap gap-2 w-full">
             <span className="text-gray-700 font-bold">{exp.company}</span>
