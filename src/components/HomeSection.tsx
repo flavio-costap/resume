@@ -6,7 +6,7 @@ import LanguagesSection from "@/components/LanguagesSection";
 import MainCard from "@/components/MainCard";
 import AcademicSection from "@/components/AcademicSection";
 import TranslatorButton from "./TranslatorButton";
-import VisitorCard from "./VisitorCard";
+// import VisitorCard from "./VisitorCard";
 
 export default function HomeSection() {
   const aboutRef = useRef(null);
@@ -69,7 +69,7 @@ export default function HomeSection() {
           </div>
           <div className="lg:col-span-1 hidden lg:block">
             <TranslatorButton />
-            <VisitorCard/>
+            {/* <VisitorCard/> */}
           </div>
         </div>
       </div>
