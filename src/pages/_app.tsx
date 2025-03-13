@@ -2,7 +2,6 @@ import "../styles/globals.css";
 import localFont from "next/font/local";
 import { AppProps } from "next/app";
 import Head from "next/head";
-import { VisitorProvider } from "@/context/VisitorContext";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 const geistSans = localFont({
@@ -39,11 +38,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <VisitorProvider>
           <LanguageProvider>
               <Component {...pageProps} />
           </LanguageProvider>
-        </VisitorProvider>
       </main>
     </div>
   );
