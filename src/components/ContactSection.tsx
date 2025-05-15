@@ -47,7 +47,7 @@ function ContactSection() {
             alt="github-icon"
           />
           <a
-            href="https://github.com/flaviocostap"
+            href="https://github.com/flavio-costap"
             className="text-blue-500"
             aria-label="GitHub profile for flavio-costap"
             target="_blank"
